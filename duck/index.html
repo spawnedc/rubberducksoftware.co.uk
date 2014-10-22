@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Rubber Duck Software</title>
+		<link rel="icon" href="/static/img/favicon.ico">
+		<link rel="shortcut icon" href="/static/img/favicon.ico" />
+		<link rel="stylesheet" href="/static/css/style.css">
+		<link rel="stylesheet" href="/static/css/form.css">
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/jquery-migrate-1.1.1.js"></script>
+		<script src="/static/js/superfish.js"></script>
+		<script src="/static/js/forms.js"></script>
+		<script src="/static/js/jquery.ui.totop.js"></script>
+		<script src="/static/js/jquery.equalheights.js"></script>
+		<script src="/static/js/jquery.easing.1.3.js"></script>
+		<script src="/static/js/jquery.ui.totop.js"></script>
+		<script src="/static/js/tms-0.4.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="/static/js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="/static/css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page2">
+			<div class="container_12">
+				<div class="grid_12">
+					<h1><a href="#" onClick="goToByScroll('page2'); return false;"><img src="/static/img/logo.png" alt="Gerald Harris attorney at law"></a></h1>
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong></li>
+								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Services</a> <strong class="hover"></strong></li>
+								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+		<div id="page2" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Rubber Duck Software</h3>
+						<h4>We make websites.</h4>
+						<div class="text1">
+							<em>&ldquo;<strong>Rubber duck debugging:</strong> A programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.&rdquo;</em>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Our Services</h3>
+						<div class="text1">
+							Our goal is to deliver beautiful and functional web applications.
+						</div>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="/static/img/box1_img1.png" alt="">
+						<div class="text1">Planning</div>We plan ahead, to prevent future problems and complications.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="/static/img/box1_img2.png" alt="">
+						<div class="text1">Research</div>Research is one of our best weapon. We follow the technology quite closely and quickly adopt to the new things.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="/static/img/box1_img3.png" alt="">
+						<div class="text1">Efficiency</div>We try to use our time efficiently, so we won't waste the most precious thing we have.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="/static/img/box1_img4.png" alt="">
+						<div class="text1">Consulting</div>We are here to help you, feel free to contact us if you have any questions!
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page5" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Get in Touch</h3>
+						<div class="text1">
+							Send us an email: <a href="mailto:info@rubberducksoftware.co.uk">info@rubberducksoftware.co.uk</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="copy">
+						&copy; 2014 Rubber Duck Software Ltd
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>
